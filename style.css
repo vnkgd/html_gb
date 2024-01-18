@@ -1,0 +1,75 @@
+/* 2. Для всех страниц указать стиль для тега body */
+body {
+    font-family: sans-serif;
+}
+
+/* убрать подчёркивание у ссылок для тега а */
+a {
+    text-decoration: none;
+}
+
+/* Для класса меню задать стили.*/
+.nav_link {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* 1. Для всех заголовков h1 на сайте задать класс title и к нему стиль */
+.title {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+/* Для всех параграфов в проекте задать класс text*/
+/* К данному классу задать стили */
+.text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+/* На главной странице заголовку h2 задать класс subtitle. 
+К данному классу указать стиль a. color: coral; */
+.subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+    color: coral;
+}
+
+/* На странице обо мне
+2. Создать класс для изображения about_photo
+3. Указать стиль для изображения
+a. Атрибутом задать значение ширины для картинки */
+.about__photo {
+    border-radius: 10px;
+}
+
+/* 1. На странице «Оставить заявку» всем полям ввода задать класс form_input
+2. Для полей ввода задать стиль*/
+.form__input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
+
+/* Всем кнопкам указать стиль form__button */
+.form__button {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}

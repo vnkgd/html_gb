@@ -26,8 +26,9 @@ a {
 }
 
 .header {
-    padding-top: 39px;
-    padding-bottom: 39px;
+    /* padding-top: 39px; */
+    padding: 39px;
+    /* padding-bottom: 39px; */
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -159,7 +160,6 @@ a {
 
 .item__text {
     font-style: normal;
-    /* font-weight: 600; стал мылить текст*/
     font-size: 16px;
     line-height: 26px;
     text-align: center;
@@ -167,14 +167,52 @@ a {
     opacity: 0.7;
 }
 
+.title_about {
+    margin-bottom: 40px;
+    color: var(--ffffff, #FFF);
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+}
+
+.text_about {
+    color: #fff;
+    /* width: 550px; */
+    line-height: 160%;
+    font-size: 18px;
+    /* font-weight: 600; стал мылить текст */
+    font-size: 18px;
+    line-height: 28.8px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.about_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 243px;
+}
+
+.about_text_block {
+    min-width: 548px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 @media (max-width: 1024px) {
     .center {
-        padding-left: calc(50% - 376px);
-        padding-right: calc(50% - 376px);
+        padding-left: calc(50% - 370px);
+        padding-right: calc(50% - 370px);
     }
 
     .subtitle {
         font-size: 16px;
+        line-height: 62px;
     }
 
     .title {
@@ -187,8 +225,9 @@ a {
 
     .top__logos {
         gap: 32px;
-        min-width: 650px;
+        max-width: 650px;
         margin: auto;
+        /* margin: 197px auto 0; */
     }
 
     .content {
@@ -205,5 +244,92 @@ a {
 
     .item_big img {
         width: 98px;
+    }
+
+    .about_block {
+        gap: 64px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16 px;
+        padding-right: 16 px;
+    }
+
+    .header {
+        gap: 16px;
+        border-radius: 10px;
+        padding: 39px 0px;
+    }
+
+    .heder__link {
+        font-size: 14px;
+    }
+
+    .top__content {
+        margin-top: 64px;
+    }
+
+    .top__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .title {
+        margin-top: 16px;
+        margin-bottom: 64px;
+        font-size: 28px;
+        line-height: 160%;
+        text-align: center;
+        max-width: 343px;
+    }
+
+    .text {
+        text-align: center;
+        max-width: 343px;
+    }
+
+    .top__buttons {
+        margin-top: 39px;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top__logos {
+        margin: 128px auto 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_image {
+        max-width: 100%;
+    }
+
+    .top__logos3 {
+        /* margin-right: auto; */
+        align-self: start;
+    }
+
+    .title_about {
+        margin-bottom: 0;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .about_block {
+        margin-top: 96px;
+        gap: 32px;
+        text-align: center;
     }
 }

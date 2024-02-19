@@ -1,0 +1,21 @@
+/* .text-color {
+    color: red;
+} */
+
+.nav_background {
+    background-color: grey !important;
+}
+
+.center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+}
+
+.product-box {
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.carousel-item:hover .carousel-control-next-icon {
+    color: red !important;
+}
